@@ -30,4 +30,51 @@ function Cadastro() {
     }
   };
   
+ return (
+    <div className="modal">
+      <div className="modal-content">
+        <main className="login">
+          <div className="login-container">
+            <h1 className="login-title">Cadastro</h1>
+            <form onSubmit={handleSubmit} className="login-form">
+              <input
+                className="login-input"
+                type="email"
+                required
+                name="iptEmail"
+                placeholder="Email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+              <span className="login-input-border"></span>
+              <input
+                className="login-input"
+                type="password"
+                required
+                name="iptSenha"
+                placeholder="Senha"
+                value={senha}
+                onChange={(e) => setSenha(e.target.value)}
+              />
+              <span className="login-input-border"></span>
+              <input
+                type="submit"
+                name="Cadastro"
+                value="Cadastrar"
+                className="bt-cadastrar"
+              />
+              <ToastContainer />
+
+              <Link className="bt-voltar-cadastro" to="/">
+                Voltar
+              </Link>
+            </form>
+          </div>
+        </main>
+      </div>
+    </div>
+  );
+}
+
+export default Cadastro;
   
