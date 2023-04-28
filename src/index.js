@@ -2,10 +2,10 @@ import React from "react";
 import { Route, BrowserRouter, Routes, Navigate } from "react-router-dom";
 import ReactDOM from "react-dom/client";
 import Login from "./components/Login";
-// import Cadastro from "./components/Cadastro";
+import Cadastro from "./components/Cadastro";
 import Home from "./components/Home";
 import Moeda from "./components/Moeda";
-// import ListaMoeda from "./components/ListaMoeda";
+import ListaMoeda from "./components/ListaMoeda";
 
 import { getToken } from "./services/auth";
 
@@ -31,7 +31,7 @@ root.render(
           </PublicRoute>
         }
       />
-      {/* <Route path="/cadastro" element={<Cadastro />} /> */}
+      { <Route path="/cadastro" element={<Cadastro />} /> }
       <Route
         path="/home"
         element={
@@ -41,7 +41,7 @@ root.render(
         }
       />
       <Route path="/cadastroMoeda" element={<Moeda />} />
-      {/* <Route path="/listaMoeda" element={<ListaMoeda />} /> */}
+      { <Route path="/listaMoeda" element={<ListaMoeda />} /> }
     </Routes>
   </BrowserRouter>
 );
