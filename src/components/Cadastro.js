@@ -12,3 +12,22 @@ function Cadastro() {
   const handleRedirect = () => {
     window.location.href = "/";
   };
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    try {
+      const response = await axios.post("/cadastro", {
+        email,
+        senha,
+      });
+      console.log(response.data);
+      toast.success("Cadastro realizado com sucesso!", {
+        autoClose: 1000,
+        onClose: handleRedirect,
+      });
+    } catch (error) {
+      console.error(error);
+    }
+  };
+  
+  
