@@ -66,9 +66,9 @@ function ListaMoeda() {
            <table border="1">
             
             <tr>
-              <td >{moeda.nome}</td>
-              <td>{moeda.alta} </td>
-              <td>{moeda.baixa}</td>
+              <td width="200">{moeda.nome}</td>
+              <td width="200">{moeda.alta} </td>
+              <td width="200">{moeda.baixa}</td>
             </tr>
     
             </table>
