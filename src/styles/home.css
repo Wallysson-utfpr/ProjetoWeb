@@ -45,7 +45,9 @@
   background-color: #f1f1f1;
   padding: 20px;
   background-image: url("/src/image/moeda.jpg");
+  background-size: cover;
   opacity: 0.8;
+  
 }
 
 
@@ -57,7 +59,7 @@
 .txtHome {
   display: flex;
   font-family: sans-serif;
-  justify-content: center;
+  justify-content: left;
   color: rgb(225, 214, 214);
   font-weight: bold;
 }

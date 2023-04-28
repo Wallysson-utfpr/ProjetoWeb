@@ -40,6 +40,9 @@ function ListaMoeda() {
       <form onSubmit={buscarMoedas}>
         <input type="text" value={busca} onChange={handleBuscaChange} />
       </form>
+      <Link className="bt-voltar" to="/">
+        Voltar
+      </Link>
       <ul>
         {moedas.map((moeda) =>
           busca !== "" &&
@@ -53,9 +56,7 @@ function ListaMoeda() {
           )
         )}
       </ul>
-      <Link className="bt-voltar" to="/">
-        Voltar
-      </Link>
+      
     </div>
   );
 }

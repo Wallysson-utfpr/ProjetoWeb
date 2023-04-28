@@ -42,7 +42,7 @@ function FormularioMoeda() {
           type="text"
           required
           name="setNome"
-          placeholder="Qual moeda?"
+          placeholder="Inserir código/nome da moeda?"
           value={nome}
           onChange={(e) => setNome(e.target.value)}
         />
@@ -52,7 +52,7 @@ function FormularioMoeda() {
           type="text"
           required
           name="setAlta"
-          placeholder="Máxima da moeda?"
+          placeholder="Valor Máximo?"
           value={alta}
           onChange={(e) => setAlta(e.target.value)}
         />
@@ -62,7 +62,7 @@ function FormularioMoeda() {
           type="text"
           required
           name="setBaixa"
-          placeholder="Mínima da moeda?"
+          placeholder="Valor Mínimo?"
           value={baixa}
           onChange={(e) => setBaixa(e.target.value)}
         />
