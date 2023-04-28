@@ -45,7 +45,7 @@ function ListaMoeda() {
       </Link>
       <ul>
 
-      <table border="1">
+      <table border="2">
             <tr>
               <th width="200"> Moeda:</th>
               <th width="200"> Valor Máximo</th>
