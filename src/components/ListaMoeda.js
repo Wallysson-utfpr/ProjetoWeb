@@ -72,9 +72,7 @@ function ListaMoeda() {
             </tr>
     
             </table>
-          
-          
-          
+                    
           )
         )}
       </ul>
