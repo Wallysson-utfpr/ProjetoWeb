@@ -53,7 +53,7 @@ function ListaMoeda() {
             </tr>
             </table>
 
-        {moedas.map((moeda) =>
+          {moedas.map((moeda) =>
           busca !== "" &&
           moeda.nome.toLowerCase().indexOf(busca.toLowerCase()) ===
             -1 ? null : (
