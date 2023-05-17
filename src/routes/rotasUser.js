@@ -64,4 +64,37 @@ router.get("/listarMoeda/:nome", async (req, res) => {
   }
 });
 
+// Rota PUT para editar uma moeda existente por ID
+router.put("/editarMoeda/:id", async (req, res) => {
+  try {
+    const id = req.params.id;
+    const { nome, alta, baixa } = req.body;
+
+    const moeda = await Moeda.findByIdAndUpdate(
+      id,
+      { nome, alta, baixa },
+      { new: true }
+    );
+
+    res.status(200).json({ mensagem: "Moeda editada com sucesso", moeda });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ mensagem: "Erro ao editar a moeda" });
+  }
+});
+
+// Rota DELETE para excluir uma moeda por ID
+router.delete("/excluirMoeda/:id", async (req, res) => {
+  try {
+    const id = req.params.id;
+
+    await Moeda.findByIdAndDelete(id);
+
+    res.status(200).json({ mensagem: "Moeda excluída com sucesso" });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ mensagem: "Erro ao excluir a moeda" });
+  }
+});
+
 module.exports = router;
