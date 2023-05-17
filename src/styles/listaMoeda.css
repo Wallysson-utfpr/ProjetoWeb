@@ -60,6 +60,11 @@
     color: rgb(14, 29, 197);
   }
 
+  .bt-excluir {
+    background-color: red;
+    margin-top: 5%;
+  }
+
   .bt-voltar {
     display: flex;
     justify-content: center;
