@@ -60,7 +60,8 @@
     color: rgb(14, 29, 197);
   }
 
-  .bt-excluir {
+  .bt-excluir,
+    .bt-cancelar {
     background-color: red;
     margin-top: 5%;
   }
